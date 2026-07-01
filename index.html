@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mendez Bin Cleaning + Lawn Care</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
   body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: Arial, sans-serif;
     background: #0b0b0f;
     color: white;
   }
@@ -19,124 +17,74 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px;
     border-bottom: 1px solid #222;
   }
 
   .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
   }
 
   .logo img {
     width: 45px;
     height: 45px;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-
-  .logo h2 {
-    font-size: 16px;
-    margin: 0;
+    border-radius: 8px;
   }
 
   .btn {
-    padding: 10px 16px;
-    border-radius: 10px;
     background: #00ff88;
     color: black;
-    font-weight: 700;
+    padding: 10px 15px;
+    border-radius: 8px;
     text-decoration: none;
+    font-weight: bold;
   }
 
   .hero {
     text-align: center;
-    padding: 90px 20px;
+    padding: 60px 20px;
   }
 
   .hero h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+    font-size: 36px;
   }
 
   .hero p {
-    color: #bdbdbd;
-    max-width: 650px;
-    margin: auto;
-    font-size: 16px;
+    color: #bbb;
   }
 
-  .hero .btn {
-    margin-top: 20px;
-    display: inline-block;
-  }
-
-  .container {
-    max-width: 1100px;
+  .section {
+    padding: 40px 20px;
+    max-width: 1000px;
     margin: auto;
-    padding: 50px 20px;
   }
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
   }
 
   .card {
     background: #141420;
-    border: 1px solid #222;
-    border-radius: 14px;
-    padding: 20px;
-  }
-
-  .card h3 {
-    color: #00ff88;
-    margin-top: 0;
-  }
-
-  .card p {
-    color: #cfcfcf;
-    font-size: 14px;
-  }
-
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
   }
 
   .gallery img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 10px;
     border: 1px solid #222;
-  }
-
-  .cta {
-    text-align: center;
-    padding: 60px 20px;
-    border-top: 1px solid #222;
-  }
-
-  input, textarea {
-    width: 100%;
-    margin-top: 10px;
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid #333;
-    background: #0b0b0f;
-    color: white;
   }
 
   footer {
     text-align: center;
     padding: 20px;
-    color: #666;
-    font-size: 12px;
+    color: #777;
     border-top: 1px solid #222;
   }
 </style>
@@ -146,8 +94,8 @@
 
 <header>
   <div class="logo">
-    <img src="logo.png" alt="Logo">
-    <h2>Mendez Bin Cleaning + Lawn Care</h2>
+    <img src="images/logo.jpg" alt="Logo">
+    <h3>Mendez Cleaning & Lawn Care</h3>
   </div>
 
   <a class="btn" href="sms:+13612175918">Get Quote</a>
@@ -155,60 +103,33 @@
 
 <div class="hero">
   <h1>Clean Yards. Clean Bins. Reliable Service.</h1>
-  <p>
-    Professional lawn care and trash can cleaning services. Fast response, affordable pricing, and detailed work every time.
-  </p>
-  <a class="btn" href="sms:+13612175918">Request Free Quote</a>
+  <p>Affordable lawn care and trash can cleaning near you.</p>
+  <a class="btn" href="sms:+13612175918">Request Quote</a>
 </div>
 
-<div class="container">
+<div class="section">
+  <h2>Services</h2>
 
   <div class="grid">
-
-    <div class="card">
-      <h3>Lawn Care</h3>
-      <p>Mowing, edging, weed trimming, and full yard maintenance.</p>
-    </div>
-
-    <div class="card">
-      <h3>Bin Cleaning</h3>
-      <p>Deep cleaning trash cans to remove smell, bacteria, and buildup.</p>
-    </div>
-
-    <div class="card">
-      <h3>Yard Cleanup</h3>
-      <p>Leaves, trash, and overgrowth removal for a clean outdoor space.</p>
-    </div>
-
+    <div class="card">Lawn Mowing & Edging</div>
+    <div class="card">Trash Can Deep Cleaning</div>
+    <div class="card">Yard Cleanup</div>
   </div>
-
-  <h2 style="margin-top:50px;">Recent Work</h2>
-  <p style="color:#bdbdbd;">Before & after results</p>
-
-  <div class="gallery">
-    <img src="images/yard-before.jpg" alt="Yard before cleanup">
-    <img src="images/yard-after.jpg" alt="Yard after cleanup">
-    <img src="images/trashcan-before.jpg" alt="Trash can before cleaning">
-    <img src="images/trashcan-after.jpg" alt="Trash can after cleaning">
-  </div>
-
 </div>
 
-<div class="cta">
-  <h2>Get Your Free Quote</h2>
+<div class="section">
+  <h2>Before & After</h2>
 
-  <form>
-    <input type="text" placeholder="Name" />
-    <input type="text" placeholder="Phone Number" />
-    <textarea rows="4" placeholder="What service do you need?"></textarea>
-  </form>
-
-  <br>
-  <a class="btn" href="sms:+13612175918">Send Message</a>
+  <div class="grid gallery">
+    <img src="images/yard-before.jpg" alt="Yard Before">
+    <img src="images/yard-after.jpg" alt="Yard After">
+    <img src="images/trashcan-before.jpg" alt="Trash Before">
+    <img src="images/trashcan-after.jpg" alt="Trash After">
+  </div>
 </div>
 
 <footer>
-  © 2026 Mendez Bin Cleaning + Lawn Care • All Rights Reserved
+  © 2026 Mendez Bin Cleaning + Lawn Care
 </footer>
 
 </body>
