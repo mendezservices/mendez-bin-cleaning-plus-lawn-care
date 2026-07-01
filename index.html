@@ -15,7 +15,6 @@
     color: white;
   }
 
-  /* HEADER */
   header {
     display: flex;
     justify-content: space-between;
@@ -51,7 +50,6 @@
     text-decoration: none;
   }
 
-  /* HERO */
   .hero {
     text-align: center;
     padding: 90px 20px;
@@ -74,7 +72,6 @@
     display: inline-block;
   }
 
-  /* SECTIONS */
   .container {
     max-width: 1100px;
     margin: auto;
@@ -104,14 +101,21 @@
     font-size: 14px;
   }
 
-  <div class="gallery">
-  <img src="images/yard-before.jpg" alt="Yard before cleanup">
-  <img src="images/yard-after.jpg" alt="Yard after cleanup">
-  <img src="images/trashcan-before.jpg" alt="Trash can before cleaning">
-  <img src="images/trashcan-after.jpg" alt="Trash can after cleaning">
-</div>
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
 
-  /* CTA */
+  .gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #222;
+  }
+
   .cta {
     text-align: center;
     padding: 60px 20px;
@@ -142,7 +146,6 @@
 
 <header>
   <div class="logo">
-    <!-- YOUR LOGO -->
     <img src="logo.png" alt="Logo">
     <h2>Mendez Bin Cleaning + Lawn Care</h2>
   </div>
@@ -180,14 +183,14 @@
   </div>
 
   <h2 style="margin-top:50px;">Recent Work</h2>
-  <p style="color:#bdbdbd;">Add your before & after photos here</p>
+  <p style="color:#bdbdbd;">Before & after results</p>
 
   <div class="gallery">
-  <img src="images/yard-before.jpg" alt="Yard before cleanup">
-  <img src="images/yard-after.jpg" alt="Yard after cleanup">
-  <img src="images/trashcan-before.jpg" alt="Trash can before cleaning">
-  <img src="images/trashcan-after.jpg" alt="Trash can after cleaning">
-</div>
+    <img src="images/yard-before.jpg" alt="Yard before cleanup">
+    <img src="images/yard-after.jpg" alt="Yard after cleanup">
+    <img src="images/trashcan-before.jpg" alt="Trash can before cleaning">
+    <img src="images/trashcan-after.jpg" alt="Trash can after cleaning">
+  </div>
 
 </div>
 
@@ -197,7 +200,7 @@
   <form>
     <input type="text" placeholder="Name" />
     <input type="text" placeholder="Phone Number" />
-    <textarea rows="4" placeholder="What service do you need? (Lawn care or bin cleaning)"></textarea>
+    <textarea rows="4" placeholder="What service do you need?"></textarea>
   </form>
 
   <br>
